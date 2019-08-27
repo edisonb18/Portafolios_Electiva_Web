@@ -1,7 +1,7 @@
 paises=["Estados Unidos", "Costa Rica", "Francia", "Colombia", "México", "Sudáfrica", "Honduras", "Japón", "Portugal", "Nicaragua"];
 monedas=["Dolar", "Colón", "Euro", "Peso Colombiano", "Peso Mexicano", "Rand Sudafricano", "Lempira", "Yen", "Euro Portugues", "Cordaba"];
 isos=["USD", "CRC", "EUR", "COP", "MXN", "ZAR","HNL", "JPY", "EUR", "NIO"];
-imagenes=["imagenes/estados_unidos.png", "imagenes/costa_rica.png", "imagenes/francia.png", "imagenes/colombia.png", "imagenes/mexico.png", "imagenes/sudafrica.png", "imagenes/honduras.png", "imagenes/japon.png", "imagenes/portugal.png", "imagenes/nicaragua.png"];
+imagenes=["Imagenes/estados_unidos.png", "Imagenes/costa_rica.png", "Imagenes/francia.png", "Imagenes/colombia.png", "Imagenes/mexico.png", "Imagenes/sudafrica.png", "Imagenes/honduras.png", "Imagenes/japon.png", "Imagenes/portugal.png", "Imagenes/nicaragua.png"];
 valores1=[1,556.86,0.89,3334.45,19.92,15.25,24.11,105.40,0.89,32.97]; 	//Dolar a moneda
 valores2=[1,0.0018,1.12,0.00030,0.050,0.066,0.041,0.0095,1.12,0.030]; 	//Moneda a dolar
 banderas=[0,0,0,0,0,0,0,0,0,0];
@@ -52,7 +52,7 @@ function colocarISO() {
 function colocarEstrellas(){
 	for (i=0;i<10;i++) {
 		celda0=f4.getElementsByTagName("th")[i];
-		celda0.innerHTML="<img src=\"imagenes/estrella_vacia.png\" style=\"height: 50px; width: 50px\" id=\"estrella"+i+"\" onclick=\"changeImage("+i+")\">"
+		celda0.innerHTML="<img src=\"Imagenes/estrella_vacia.png\" style=\"height: 50px; width: 50px\" id=\"estrella"+i+"\" onclick=\"changeImage("+i+")\">"
  	}
 	
 }
@@ -109,10 +109,10 @@ function limpiar(){
 
 function changeImage(i){
 	if (banderas[i]==0) {
-		document.getElementById("estrella"+i).src = "imagenes/estrella_llena.png";
+		document.getElementById("estrella"+i).src = "Imagenes/estrella_llena.png";
 		banderas[i]=1;
 	}else {
-		document.getElementById("estrella"+i).src = "imagenes/estrella_vacia.png";
+		document.getElementById("estrella"+i).src = "Imagenes/estrella_vacia.png";
 		banderas[i]=0;
 	}
 }
