@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Hoja_Estilos.css"/>
+</head>
+
+<body>
+	<h2>Elementos basico de HTML estandar</h2>
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>1. Headings</h3>
+			<p>
+				Propósito: Los headings o encabezados son indicadores que guían a los lectores a través de una página. Además, los encabezados pueden ayudar a los usuarios a conocer la estructura de la página.<br><br>
+				
+				Sintaxis: Los headings se escriben dependiendo el tamaño para lo que se necesitan, van desde &#60h1&#62Texto&#60/h1&#62 hasta &#60h2&#62Texto&#60/h2&#62 subiendo el valor de h.<br><br>
+				
+				Atributos:<br>
+				-style para definir tamaño, etc.
+				-color para definir el color de la letra.
+				-align para definir el alineamiento.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<h1>This is heading 1</h1>
+			<h2>This is heading 2</h2>
+			<h3>This is heading 3</h3>
+			<h4>This is heading 4</h4>
+			<h5>This is heading 5</h5>
+			<h6>This is heading 6</h6>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>2. Paragraphs</h3>
+			<p>
+				Propósito: Se crearon para el manejo más eficiente y sencillo de párrafos, esto es un grupo de oraciones que comparten un tema. <br><br>
+
+				Sintaxis: se escribe de esta forma &#60p &#62Texto &#60/p&#62 <br><br>
+				
+				Atributos:<br>
+				-color para definir el color de la letra.
+				-align para definir el alineamiento.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<p>El párrafo está constituido por una oración principal que puede ser distinguida fácilmente, ya que enuncia la parte esencial de la cual dependen los demás. Es posible decir entonces que la oración principal posee un sentido esencial del párrafo. La oración principal puede aparecer en el texto de forma implícita o explícita. Cuando la oración principal está implícita, ésta no aparece por escrito en el párrafo y es necesario deducirla. En cambio, la explícita, sí la encontramos escrita y podemos encontrarla al principio, en el medio o al final del párrafo.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>3. Links</h3>
+			<p>Propósito: Se crearon para poder establecer links a páginas, cuando sea necesario, puede ser usado de esa forma o usarlo en un botón para redireccionar la página actual. <br><br>
+
+			Sintaxis: &#60a href="https://www.facebook.com"&#62 Esto es un link &#60/a&#62 intercambiando la dirección de Facebook por la dirección que se necesita. <br><br>
+			
+			Atributos:
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<a href="https://www.facebook.com">Esto es un link</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>4. Imágenes</h3>
+			<p>Propósito: Funcionan para hacer un sitio más estético, poder dar ideas sobre distintos temas y hacer un sitio mas amigable para el usuario. <br><br>
+			Sintaxis: &#60img src="perro.jpg" alt="Perro"&#62 intercambiando  perro.jpg por el nombre y la ubicación de la imagen necesaria. <br><br>
+			Atributos importantes: <br>
+			-alt para dar un titulo si no se carga la imagen.
+			-width para controlar la anchura.
+			-height para controlar la altura.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<img src="Imagenes/perro.jpg" alt="Perro" width="250" height="250">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>5. Botones</h3>
+			<p>Propósito: Funciona para hacer alguna acción o redireccionar a algún lugar. <br><br>
+
+			Sintaxis: &#60button&#62 Presióname para realizar alguna acción &#60/button&#62 intercambiando el texto actual por el texto que se quiere que el botón tenga escrito. <br><br>
+
+			Atributos importantes: <br>
+			-onclick para controlar la función del mismo
+			-name para identificarlo
+			-disabled para deshabilitarlo
+			-type para escoger el tipo
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<button onclick="window.location.href = 'https://www.facebook.com';">Presióname</button> 
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>6. Listas</h3>
+			<p>
+				Propósito: Creación de listas para enumerar ideas, oraciones, secciones, etc. <br><br>
+				Sintaxis: <br>
+				&#60ol&#62<br>
+				&#60li&#62Coffee&#60/li&#62 <br>
+				&#60li&#62Tea&#60/li&#62 <br>
+				&#60li&#62Milk&#60/li&#62 <br> 
+				&#60/ol&#62 <br><br>
+
+				Atributos importantes: <br>
+				-href para direccionar el elemento a algún lugar
+				-ul para hacer la lista desordenada
+				-ol para hacerla ordenada
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<ol>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol> 
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>7. Enters</h3>
+			<p>
+				Propósito: funcionan para dar saltos de línea cuando sea necesario. <br><br>
+				Sitaxis: &#60br&#62<br><br>
+				Atributos importantes: <br>
+				Este atributo incluye los atributos globales por lo que no posee atributos específicos pero si se pueden colocar una serie de enters consecutivos para crear más o menos espacio
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<p>Salto de linea</p> <br>
+			<p>Dos saltos de linea</p> <br> <br>
+			<p>Tres saltos de linea</p><br> <br> <br>
+			<p>Listo</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="columnLarger" style= background-color:MediumSeaGreen>
+			<h3>8. Tablas</h3>
+			<p>
+				Propósito: Normalmente es necesario la creación de tablas para mejorar el proceso de visualización de algunos datos.<br><br>
+
+				Sintaxis:<br>
+				&#60table&#62<br>
+				  &#60tr&#62 &#60th&#62Company&#60/th&#62<br>
+				    &#60th&#62Contact&#60/th&#62 &#60/tr&#62<br>
+				  &#60tr&#62 &#60td&#62Alfreds Futterkiste&#60/td&#62<br>
+				    &#60td&#62Maria Anders&#60/td&#62 &#60/tr&#62<br>
+				  &#60tr&#62 &#60td&#62Centro comercial Moctezuma&#60/td&#62<br>
+				    &#60td&#62Francisco Chang&#60/td&#62 &#60/tr&#62<br>
+				  &#60tr&#62 &#60td&#62Ernst Handel&#60/td&#62<br>
+				    &#60td&#62Roland Mendel&#60/td&#62 &#60/tr&#62<br>
+				&#60/table&#62<br><br>
+
+				Atributos:<br>
+				-border para crear un borde
+				-padding para controlar el espacio entre los datos
+				-text-alig para alinear el texto
+			</p>
+		</div>
+
+		<div class="columnLarger" style= background-color:MediumSeaGreen>
+			<table>
+			  <tr>
+			    <th>Company</th>
+			    <th>Contact</th>
+			    <th>Country</th>
+			  </tr>
+			  <tr>
+			    <td>Alfreds Futterkiste</td>
+			    <td>Maria Anders</td>
+			    <td>Germany</td>
+			  </tr>
+			  <tr>
+			    <td>Centro comercial Moctezuma</td>
+			    <td>Francisco Chang</td>
+			    <td>Mexico</td>
+			  </tr>
+			  <tr>
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			  <tr>
+			    <td>Island Trading</td>
+			    <td>Helen Bennett</td>
+			    <td>UK</td>
+			  </tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>9. Comentarios</h3>
+			<p>
+				Propósito: Es importante documentar nuestro código mientras programamos por lo que es una herramienta muy útil. <br><br>
+				
+				Sintaxis: &#60!—Comentario--&#62 en el que se puede sustituir el comentario por cualquiera de un mayor o 
+				menor largo. <br><br>
+				
+				Atributos importantes: <br>
+				Este atributo incluye los atributos globales por lo que no posee atributos específicos.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<img src="Imagenes/Comentario.jpg" alt="Comentarios">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>10. Divisiones o Secciones</h3>
+			<p>
+				Proposito: Es importante para la página, poder dividir la misma en secciones, por ejemplo, este sitio esta dividido en dos columnas, esto para mantener la estética.<br><br>
+
+				Sintaxis: Esta funciona abriendo y cerrando la etiqueta div de esta forma &#60div&#62 Todos los elementos que se quieren dividir &#60/div&#62.<br><br>
+
+				Atributos importantes:<br>
+				-width es el ancho de la división.
+				-padding es para controlar el espacio.
+				-height es el alto de la división.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<div style="background-color:gray;color:white;padding:20px;">
+			  <h2>London</h2>
+			  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+			  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>11. Contenedor de texto</h3>
+			<p>
+				Propósito: El contenedor de texto o span funciona para contener trozos de texto en un heading, párrafo, etc. Además, se pueden modificar estos trozos con un color, un tamaño, etc. <br><br>
+
+				Sintaxis: &#60h1&#62My &#60span style="color:red"&#62Important&#60/span&#62 Heading&#60/h1&#62 donde se puede ver que por ejemplo se le cambia el color al trozo de texto definido en el heading. <br><br>
+				
+				Atributos: <br>
+				-color para controlar el color
+				-size para controlar el tamaño
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<h1>My <span style="color:red">Important</span> Heading</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>12. Paginas dentro de sitios</h3>
+			<p>
+				Propósito: A veces es necesario mostrar una pagina dentro de otra página, esto puede ayudar a ahorrar tiempo y mantener o aumentar la estética del sitio. <br><br>
+				
+				Sintaxis: &#60 iframe src="Imagenes/ejemplo.htm"&#62 &#60 /iframe&#62 donde se puede usar un sitio alojado en la computadora o un sitio en internet, por medio del link del mismo. <br><br>
+				
+				Atributos importantes: <br>
+				-height para escoger la altura de la ventana.
+				-width para escoger el ancho de la ventana.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<iframe src="Imagenes/ejemplo.htm" height="200" width="500"></iframe>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:grey>
+			<h3>13. Modificadores de texto</h3>
+			<p>
+				Modificación del texto
+				Propósito: Es necesario a veces usar tipos de letra distinta, subrayar texto, etc. Esto dependiendo el texto, esto para mantener la estética y crear un ambiente más amigable.<br><br>
+
+				Sintaxis: todos siguen el formato de &#60b&#62This text is bold&#60/b&#62 donde b es el parámetro que cambia.<br><br>
+				Atributos: <br>
+				Este atributo incluye los atributos globales por lo que no posee atributos específicos. Existen distintos tipos de modificadores entre los que se puede nombrar los siguientes: <br>
+				b -Bold, strong -Subrayar, i -Italica, em -Enfatizar, mark -Marcar, small – Pequeño, etc.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:grey>
+			<p>This text is normal.</p>
+			<p><i>This text is italic.</i></p>
+			<p><em>This text is emphasized.</em></p>
+			<p>HTML <mark>Marked</mark> Formatting</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>14. Líneas divisorias</h3>
+			<p>
+				Propósito: para mantener el orden dentro de la página o sección, es necesario crear líneas de división.<br><br>
+
+				Sintaxis: &#60hr&#62<br><br>
+
+				Atributos importantes:<br>
+				-color para controlar el color
+				-size para controlar el tamaño
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<p>HTML is a language for describing web pages.</p>
+			<hr>
+			<p>CSS defines how to display HTML elements.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>15. Caja de opciones</h3>
+			<p>
+				Propósito: Para tener varias opciones que se pueden seleccionar sin tener que usar todo el espacio que ocuparían estas secciones. <br><br>
+				Sintaxis: <br>
+
+				&#60select&#62<br>
+				  &#60option value="volvo"&#62Volvo&#60/option&#62<br>
+				  &#60option value="saab"&#62Saab&#60/option&#62<br>
+				&#60/select&#62<br><br>
+
+				Atributos: <br>
+				-form para definir la forma
+				-size para definir tamaño
+				-multiple para poder seleccionar múltiples opciones
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<select>
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			  <option value="opel">Opel</option>
+			  <option value="audi">Audi</option>
+			</select>
+		</div>
+	</div>
+
+	<h3>Referencias bibliográficas consultadas</h3>
+	<p>
+		Fuentes:
+		https://www.w3schools.com/html/ <br>
+		https://www.bitdegree.org/learn/ <br>
+		https://www.w3schools.com/css/default.asp<br>
+		https://developer.mozilla.org/en-US/docs/Web/HTML<br>
+	</p>
+
+</body>
+</html>
+

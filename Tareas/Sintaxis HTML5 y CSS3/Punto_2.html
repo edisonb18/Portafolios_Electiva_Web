@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Hoja_Estilos.css"/>
+</head>
+
+<body>
+	<h2>Elementos agregados en HTML5</h2>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>1. Artículo</h3>
+			<p>
+				Propósito: Define un artículo en un documento<br>
+				Sintaxis: <br>
+				&#60article&#62<br>
+				  &#60p&#62Google Chrome is a free, open-source web browser developed by Google, released in 2008.&#60/p&#62<br>
+				&#60/article&#62<br><br>
+				Atributos: El articulo soporta los atributos globales de HTML tales como class, dir, data, etc.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<article>
+			  <h1>Google Chrome</h1>
+			  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+			</article>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>2. Aside (al lado)</h3>
+			<p>
+				Propósito: Define el contenido aparte del contenido de la página<br><br>
+				Sintaxis:<br>
+				&#60aside&#62<br>
+				  &#60h4&#62Epcot Center&#60/h4&#62<br>
+				  &#60p&#62The Epcot Center is a theme park in Disney World, Florida.&#60/p&#62<br>
+				&#60/aside&#62<br><br>
+				Atributos:
+				El Aside o al lado soporta los atributos globales de HTML tales como class, dir, data, etc.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<p>My family and I visited The Epcot center this summer.</p>
+			<aside>
+			  <h4>Epcot Center</h4>
+			  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+			</aside>
+		</div>
+	</div> 
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>3. Dialog</h3>
+			<p>
+				Propósito: Define una caja de dialogo o una ventana<br><br>
+				Sintaxis:<br>
+				&#60dialog open&#62This is an open dialog window&#60/dialog&#62<br><br>
+				Atributos:<br>
+				-Posee el atributo open que especifica que el elemento de diálogo está activo y que el usuario puede interactuar con él.
+				-Posee los atributos globales de html.<br><br>
+
+				<p>En el ejemplo se coloca en la mitad ya que es una caja de dialogo</p>
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<dialog open>This is an open dialog window</dialog>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>4. Details o Detalles</h3>
+			<p>
+				Propósito: Define detalles adicionales que el usuario puede ver o esconder.<br><br>
+				Sintaxis: <br>
+				&#60details&#62<br>
+				  &#60summary&#62Copyright 1999-2018.&#60/summary&#62<br>
+				  &#60p&#62 - by Refsnes Data. All Rights Reserved.&#60/p&#62<br>
+				&#60/details&#62<br><br>
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<details>
+			<summary>Copyright 1999-2018.</summary>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			</details>
+		</div>
+	</div> 
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>5. Figcaption</h3>
+			<p>
+				Propósito: Define un título para un elemento<br><br>
+				Sintaxis:<br>
+				&#60figure&#62<br>  
+				&#60img src="Imagenes/perro.jpg"
+					&#60figcaption&#62Fig.1 – Perro Prueba&#60/figcaption&#62<br>
+				&#60/figure&#62<br><br>
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<figure>
+			  <img src="Imagenes/perro.jpg" alt="Perro prueba" width="250" height="250">
+			  <figcaption>Fig.1 - Perro pruebas.</figcaption>
+			</figure>
+		</div>
+	</div> 
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>6. Footer</h3>
+			<p>
+				Propósito: Define un pie de página para un documento o sección.<br><br>
+				Sintaxis: <br>
+				&#60footer&#62<br>
+				  &#60p&#62Posted by: Edison Gonzalez Blanco&#60/p&#62<br>
+				&#60/footer&#62<br><br>
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<footer>
+			  <p>Posted by: Hege Refsnes</p>
+			  <p>Contact information: <a href="mailto:someone@example.com">
+			  someone@example.com</a>.</p>
+			</footer>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>7. Header</h3>
+			<p>
+				Propósito:Define un encabezado para un documento o sección.<br><br>
+
+				Sintaxis: <br>
+				&#60header&#62<br>
+					&#60h3&#62Important heading here&#60/h3&#62<br>
+					&#60p&#62Some additional information<br> here.&#60/p&#62<br>
+				&#60/header&#62<br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<article>
+			  <header>
+			    <h1>Most important heading here</h1>
+			    <h3>Less important heading here</h3>
+			    <p>Some additional information here.</p>
+			  </header>
+			</article>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>8. Main</h3>
+			<p>
+				Propósito:Define el contenido principal de un documento.<br><br>
+
+				Sintaxis:<br>
+				&#60main&#62<br>
+				  &#60h1&#62Web Browsers&#60/h1&#62<br>
+				  &#60p&#62Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&#60/p&#62<br>
+				&#60/main&#62<br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.				
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<main>
+			  <h1>Web Browsers</h1>
+			  <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+			  <article>
+			    <h1>Google Chrome</h1>
+			    <p>Google Chrome is a free, open-source web browser developed by Google,
+			    released in 2008.</p>
+			  </article>
+
+			  <article>
+			    <h1>Internet Explorer</h1>
+			    <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+			  </article>
+			</main>
+		</div>
+	</div> 
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>9. Nav</h3>
+			<p>
+				Propósito:Define links de navegación.<br><br>
+
+				Sintaxis:<br>
+				&#60nav&#62<br>
+				&#60a href="/html/"&#62HTML&#60/a&#62 |<br>
+				&#60a href="/css/"&#62CSS&#60/a&#62 <br>
+				&#60/nav&#62<br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<nav>
+			<a href="Imagenes/ejemplo.htm">HTML</a> |
+			<a href="Imagenes/ejemplo.htm">CSS</a> |
+			<a href="Imagenes/ejemplo.htm">JavaScript</a> 
+			</nav>
+		</div>
+	</div> 
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>10. Progress</h3>
+			<p>
+				Propósito: Representa el progreso de una tarea, por ejemplo, una descarga.<br><br>
+
+				Sintaxis:<br>
+				&#60progress value="22" max="100"&#62<br>
+				&#60/progress&#62<br><br>
+
+				Atributos: <br>
+				-max especifica cuanto trabajo necesita la tarea en total.<br>
+				-value especifica que tanto está terminada la tarea.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			Downloading progress:
+			<progress value="22" max="100">
+			</progress>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>11. Medidor</h3>
+			<p>
+				Propósito:Define una medición escalar dentro de un rango conocido (un medidor).<br><br>
+
+				Sintaxis<br>
+				&#60meter value="2" min="0" max="10"&#62 2 out of 10 &#60/meter&#62<br><br>
+
+				Atributos: <br>
+				-min especifica el valor mínimo.
+				-max especifica el valor maximo.
+				-value especifica el valor actual del medidor.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<p>Despliega un medidor:</p>
+			<meter value="2" min="0" max="10">2 out of 10</meter><br>
+			<meter value="0.6">60%</meter>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>12. Time</h3>
+			<p>
+				Propósito:Define una hora o día.Representa un periodo específico en el tiempo<br><br>
+
+				Sintaxis: <br>
+				&#60p&#62<br>
+				I have a date on &#60time datetime="2008-02-14 20:00"&#62Valentines day&#60/time&#62.
+				<br>&#60/p&#62<br><br>
+
+				Atributos:
+				-datetime representa una fecha / hora legible por el elemento &#60time&#62
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<p>The concert starts at <time datetime="2018-07-07T20:00:00">20:00</time>.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>13. Section o Sección</h3>
+			<p>
+				Propósito: Define una sección en un documento.<br><br>
+
+				Sintaxis: <br>
+				&#60section&#62<br>
+				  &#60h1&#62WWF&#60/h1&#62<br>
+				&#60/section&#62 <br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<section>
+			  <h1>WWF</h1>
+			  <p>The World Wide Fund for Nature (WWF) is....</p>
+			</section> 
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:MediumSeaGreen>
+			<h3>14. Salto de línea wbr</h3>
+			<p>
+				Propósito: Define un posible salto de línea.Cuando una palabra es demasiado larga, o tienes miedo de que el navegador rompa sus líneas en el lugar equivocado, puede usar el elemento wbr para agregar saltos de linea en lugares específicos.<br><br>
+
+				Sintaxis:<br>
+				&#60p&#62<br>
+				This is a veryveryveryveryveryveryveryveryveryveryveryveryveryvery&#60wbr&#62<br>
+				longwordthatwillbreakatspecificplaceswhenthebrowserwindowisresized<br>
+				&#60/p&#62<br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+
+			</p>
+		</div>
+
+		<div class="column" style= background-color:MediumSeaGreen>
+			<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column" style= background-color:gray>
+			<h3>15. Anotaciones Ruby</h3>
+			<p> 
+				Propósito: El elemento ruby provee los medios para aplicar anotaciones ruby a una línea de texto. Las anotaciones ruby son trozos cortos de texto que corren a la par del texto base y proveen algún tipo de ayuda para procesarlo. Son mayormente utilizadas en la tipografía asiática, pero pueden ser útiles para cualquier tipo de anotaciones.<br><br>
+
+				Sintaxis:<br>
+				&#60ruby&#62<br>
+				 漢 &#60rt&#62 ㄏㄢˋ &#60/rt&#62<br>
+				&#60/ruby&#62<br><br>
+
+				Atributos: Este elemento incluye los atributos globales por lo que no posee atributos específicos.
+			</p>
+		</div>
+
+		<div class="column" style= background-color:gray>
+			<ruby>
+			 漢 <rt> ㄏㄢˋ </rt>
+			</ruby>
+		</div>
+	</div>
+	<h3>Referencias bibliográficas consultadas</h3>
+	<p>
+		Fuentes:
+		https://www.w3schools.com/html/ <br>
+		https://www.bitdegree.org/learn/ <br>
+		https://www.w3schools.com/css/default.asp<br>
+		https://developer.mozilla.org/en-US/docs/Web/HTML<br>
+	</p>
+
+</body>
+</html>
