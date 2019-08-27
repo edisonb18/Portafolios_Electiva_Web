@@ -1,0 +1,33 @@
+body {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+  padding: 5px;
+  width: 112.5px;
+  height: 75px;
+}
+
+input[type=number]{
+  width: 100px;
+} 
+
+div{
+  border: 5px MediumSeaGreen;
+  border-radius: 12px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
